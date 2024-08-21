@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PesoCalcular</title>
+</head>
+<body>
+    <h1>Calcule seu peso ideal</h1>
+    <p>Insira seu Nome</p>
+    <input type="text" id="Nome">
+    <h3>insira o gênero e a sua altura</h3>
+    <p>digite M para "masculino" ou F para"feminino"</p>
+    <label for="genero">Gênero</label>
+    <input type="text" id="genero">
+    <br><br><br>
+    <label for="altura">Altura</label>
+    <input type="number" id="altura">
+    <br><br>
+    <button onclick="calcularPeso()">Calcular</button>
+    <script src="liçao.js"></script>
+    <div id="resultado"></div>
+    <h3>Carregar dados anteriores?</h3>
+    <button onclick="carregarDadosA()">Carregar</button>
+</body>
+</html>
