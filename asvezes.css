@@ -1,0 +1,73 @@
+*{
+    margin:5px;
+    width: auto;
+
+}
+body{
+    background-color: rgb(227, 207, 207);
+    background-image: url(img/fundo-de-design-de-padrao-organico-abstrato_1048-19286.avif);
+    background-size: 200px;
+    
+}
+h1{
+    text-align: center;
+    text-decoration:wavy;
+    color: rgb(135, 102, 102);
+    text-decoration-line:underline;
+    font-family:Georgia, 'Times New Roman', Times, serif
+    
+}
+p{
+    text-align: justify;
+    text-align: center;
+    text-decoration-color: rgba(0, 0, 0, 0.701);
+    text-decoration-line:underline;
+    font-size: larger;
+    font-style: oblique;
+}
+
+img{
+    width: 300px;
+    border-width: 7px;
+    border-radius: 30px;
+    border-style:inset;
+    border-color: rgb(145, 82, 82);
+}
+nav{
+    background-color: rgb(167, 95, 95);
+    padding: 10px; /*espacamento interno*/
+}
+
+nav ul{
+    /*(list-style-type: none;)*/ /*remove as bolinhas da lista*/
+    margin:0; 
+    padding:0;
+    display: flex; /*deixa os intens na horizontal*/
+    justify-content: center; /*centralisa os intens*/
+
+
+}
+h2{
+ text-decoration:solid;
+ text-decoration-line:underline;
+ text-decoration-color: brown;
+ color: rgb(148, 9, 9);
+ 
+}
+
+nav ul li{
+    margin: 0 35px;
+}
+
+nav ul li a:hover{
+    color: rgb(255, 150, 150);
+
+}
+
+nav ul li a{
+    color: rgb(235, 235, 235);
+    font-size: 20px;
+    transition-delay: 0.3s;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
