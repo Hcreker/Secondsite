@@ -1,0 +1,271 @@
+*{
+    margin:5px;
+    width: auto;
+
+
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+   
+    background-color: rgb(227, 207, 207);
+    background-image: url(img/fundo-de-design-de-padrao-organico-abstrato_1048-19286.avif);
+    background-size: 200px;
+    margin: 0;/* Remove margens padrão */
+}
+
+.container {
+    display: flex; /* Define o contêiner como um flexbox */
+    gap: 20px; /* Espaçamento entre os cards */
+    flex-wrap: wrap; /* Permite que os cards quebrem linha se necessário */
+}
+
+
+/* Estilo para cada card */
+.card {
+   
+    background-color: rgb(191, 178, 178);
+    border: 5px solid #ff9f9f;
+    border-radius: 80px; /* Arredonda os cantos dos cards */
+    padding: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra para dar um efeito de elevação */
+    flex: 1; /* Permite que os cards cresçam igualmente */
+    max-width: 400px; /* Define uma largura máxima para os cards */
+}
+
+
+.card h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #000000;
+    text-decoration:solid;
+    text-decoration-line:underline;
+    text-decoration-color: rgb(43, 42, 42);
+}
+
+
+/* Estilo para o parágrafo dos cards */
+.card p {
+    color: #000000;
+    text-decoration: none;
+}
+
+
+.card button{
+    background-color: rgb(255, 224, 224);
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.card button:hover{
+    background-color: rgb(255, 70, 70);
+}
+
+h1{
+    text-align: center;
+    text-decoration:wavy;
+    color: rgb(94, 72, 72);
+    text-decoration-line:underline;
+    font-family:Georgia, 'Times New Roman', Times, serif
+   
+}
+
+
+h2{
+    text-decoration:solid;
+    text-decoration-line:underline;
+    text-decoration-color: brown;
+    color: rgb(148, 9, 9);
+}
+
+
+p{
+    text-align: justify;
+    text-align: center;
+    text-decoration-color: rgba(0, 0, 0, 0.701);
+    text-decoration-line:underline;
+    font-size: larger;
+    font-style: oblique;
+}
+
+
+img{
+    width: 100px;
+    border-width: 7px;
+    border-radius: 300px;
+    border-style:inset;
+    border-color: rgb(193, 101, 101);
+}
+
+
+nav{
+    background-color: rgb(79, 69, 69);
+    padding: 10px; /*espacamento interno*/
+}
+
+
+nav ul{
+    list-style-type: none; /*remove as bolinhas da lista*/
+    margin:0;
+    padding:0;
+    display: flex; /*deixa os intens na horizontal*/
+    justify-content: center; /*centralisa os intens*/
+}
+
+
+nav ul li{
+    position: relative;
+    margin: 0 570px;
+}
+
+
+nav ul li a:hover{
+    color: rgb(255, 165, 165);
+}
+
+
+nav ul li a{
+    color: rgb(255, 252, 252);
+    font-size: 20px;
+    transition: color 0.3s;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: block;
+}
+
+hr{
+    padding: 3px;
+    background-color: rgb(255, 163, 163);
+}
+
+nav ul li .dropdown-content {
+    display: none; /* Esconde o submenu inicialmente */
+    position: absolute; /* Posiciona o submenu em relação ao item pai */
+    background-color: #333;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1; /* Garante que o submenu fique acima de outros elementos */
+    min-width: 1600px;
+    padding: 0;
+}
+
+
+nav ul li .dropdown-content li {
+    margin: 0;
+}
+
+
+nav ul li .dropdown-content li a {
+    padding: 10px 15px;
+}
+
+
+nav ul li .dropdown-content li a:hover {
+    background-color: #575757; /* Cor de fundo ao passar o mouse sobre o submenu */
+}
+
+
+/* Exibe o submenu ao passar o mouse sobre o item principal */
+nav ul li:hover .dropdown-content {
+    display: block;
+
+
+}
+
+
+footer{
+    background-color: rgb(79, 69, 69);
+    color: rgb(255, 255, 255);
+    padding: 40px 40;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 200px;
+}
+.footer-section{
+    flex-basis: 23%;/*faz com que as seçoes ocupem 23% de largura com espaco para as margens*/
+    margin-bottom: 20px;
+}
+.footer-section h4{
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: rgb(252, 134, 134);
+  text-decoration: underline;
+}
+.footer-section p, .footer-section ul{
+   margin: 0;
+   padding: 0;
+   line-height: 1.6;
+}
+.footer-section ul{
+    list-style-type: none;
+}
+.footer-section p{
+    text-decoration: none;
+}
+.footer-section ul li a{
+    color: rgb(255, 255, 255);
+   
+}
+
+
+.container-login {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 350px;
+    text-align: center;
+    
+    
+   
+}
+
+.container-login img {
+    margin-bottom: 20px;
+}
+
+
+
+label {
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #481818;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #cec9c6;
+    border-color: #d79898;
+    outline: none;
+}
+
+button {
+    background-color: #432512;
+    color: rgb(255, 255, 255);
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #633309;
+    color: #ff9f9f;
+}
