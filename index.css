@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lora', serif;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #e74c3c;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 10px 10px 10px rgb(255, 255, 255);
+
+}
+
+.logo {
+    color: #000000;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.hero {
+    height: 100vh;
+    background: url('https://via.placeholder.com/1920x1080') center center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-overlay {
+    background-image: url('/img/images.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.482);
+
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-family: 'Playfair Display', serif;
+}
+
+.hero p {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.hero .btn {
+    background-color: #e74c3c;
+    color: #ffffff;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.hero .btn:hover {
+    background-color: #c0392b;
+}
+
+.menu-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+#menu h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #b0b0b0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 30%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.card img {
+    max-width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card h3 {
+    margin: 20px 0;
+    font-size: 22px;
+}
+
+.card p {
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.sobre-section {
+    display: flex;
+    padding: 60px 0;
+    background-color: #ecf0f1;
+}
+
+.sobre-image {
+    background: url('https://via.placeholder.com/800x600') center center no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+.sobre-content {
+    padding: 40px;
+    width: 50%;
+}
+
+.sobre-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.sobre-content p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.contato-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+#contato h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form input, form textarea {
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #e74c3c;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #c0392b;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
